@@ -8,7 +8,6 @@ module.exports = {
     findById
 }
 
-
 function findBy(filter) {
     return db("users").where(filter);
   }
