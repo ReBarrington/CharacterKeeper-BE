@@ -1,7 +1,5 @@
 const express = require('express');
 const Books = require('./books-model.js');
-const mappers = require('./mappers.js');
-
 const router = express.Router();
 
 // retrieve list of books
