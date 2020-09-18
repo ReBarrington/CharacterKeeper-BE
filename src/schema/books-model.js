@@ -48,8 +48,6 @@ function addBook(book) {
 function addCharacter(character) {
     return db('characters')
         .insert(character, 'id')
-        // @TODO: RESTful to return all characters?
-        .then(([id]) => getCharacters());
 }
 
 function updateCharacter(id, changes) {
@@ -58,3 +56,4 @@ function updateCharacter(id, changes) {
         .update(changes)
         .then(count => (count > 0 ? getCharacterbyId(id) : null));
 }
+
