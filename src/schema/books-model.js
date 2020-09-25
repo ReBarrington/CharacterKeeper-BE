@@ -48,6 +48,7 @@ function addBook(book) {
 function addCharacter(character) {
     return db('characters')
         .insert(character, 'id')
+        .then(character)
 }
 
 function updateCharacter(id, changes) {
